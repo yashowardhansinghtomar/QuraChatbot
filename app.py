@@ -6,7 +6,7 @@ from transformers import pipeline
 st.title("PDF Chatbot")
 
 # Upload PDF file
-uploaded_file = st.file_uploader("Choose a PDF file", type="pdf")
+uploaded_file = st.file_uploader("BlockchainApp.pdf", type="pdf")
 
 if uploaded_file is not None:
     # Extract text from PDF
