@@ -7,7 +7,7 @@ import requests
 st.title("Q Chatbot")
 
 # URL of the PDF file on GitHub
-pdf_url = "https://raw.githubusercontent.com/your-github-username/your-repository/main/your-file.pdf"
+pdf_url = "https://github.com/yashowardhansinghtomar/QuraChatbot/blob/main/BlockchainApp.pdf"
 
 # Fetch PDF from URL
 response = requests.get(pdf_url)
@@ -28,7 +28,7 @@ if response.status_code == 200:
     qa_model = pipeline("question-answering", model="deepset/roberta-base-squad2")
 
     # Input question from the user
-    question = st.text_input("Ask a question about the PDF")
+    question = st.text_input("Ask something about quranium")
 
     if question:
         # Get answer from the model
